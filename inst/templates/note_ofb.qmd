@@ -1,0 +1,28 @@
+---
+title: "Note de service"
+subtitle: "Direction"
+author: "Service"
+date: "`r format(Sys.time(), '%d-%m-%Y')`"
+format: 
+    docx:
+        reference-doc: template_note_ofb.docx
+editor: visual
+---
+
+\newpage
+
+# Titre de chapitre
+
+## Titre de niveau 1
+
+Texte normal
+
+### Titre de niveau 2
+
+1.  liste numérotée
+
+2.  liste numérotée
+
+-   liste à puce
+
+-   liste à puce
