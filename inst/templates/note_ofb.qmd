@@ -26,3 +26,27 @@ Texte normal
 -   liste à puce
 
 -   liste à puce
+
+Code et graphique:
+
+```{r}
+data(CO2)
+
+ggplot2::ggplot(
+    data = CO2,
+    mapping = ggplot2::aes(
+            x = conc, y = uptake,
+            color = Plant
+        )
+    ) +
+    ggplot2::geom_point() +
+    ggplot2::geom_smooth(se = FALSE) +
+    ggplot2::facet_wrap(facets = ggplot2::vars(Treatment)) +
+    ggplot2::theme_light()
+```
+
+Tableau
+
+```{r}
+knitr::kable(head(CO2))
+```
