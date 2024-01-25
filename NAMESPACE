@@ -3,6 +3,8 @@
 export(compose_ofb)
 export(creer_note_ofb)
 export(golem_template)
+export(int_breaks)
+export(int_limits)
 export(ofb_cols)
 export(ofb_pal)
 export(scale_color_ofb)
