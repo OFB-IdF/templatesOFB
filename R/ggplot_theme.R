@@ -51,6 +51,10 @@ theme_ofb <- function(base_size = 11, base_family = "") {
                 hjust = 0,
                 vjust = 4
             ),
+            plot.caption = ggplot2::element_text(
+                size = base_size * .75,
+                hjust = 0
+            ),
             plot.title.position = "plot",
             axis.line = ggplot2::element_line(
                 color = ofb_cols("marron1")
@@ -74,7 +78,7 @@ theme_ofb <- function(base_size = 11, base_family = "") {
                 color = ofb_cols("marron1"),
                 angle = 90,
                 vjust = 2,
-                hjust = 1,
+                hjust = 0,
                 size = base_size*1.1
             ),
             legend.title = ggplot2::element_text(
