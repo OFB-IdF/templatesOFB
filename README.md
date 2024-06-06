@@ -2,16 +2,12 @@ templatesOFB
 
 Ce pakage met à disposition un ensemble d'éléments répondant à la charte graphique de l'OFB: couleurs, themes ggplot, modèle de tableau de bord shiny...
 
-Il peut être installé depuis le Gitlab de l'OFB:
+Il peut être installé depuis le GitHub de la DR IdF de l'OFB:
 
 ```r
-if (!require(remotes))
-    install.packages("remotes")
+if (!require(pak))
+    install.packages("pak")
 
-remotes::install_gitlab(
-    repo = "cedric.mondy1/templatesofb",
-    host = "https://gitlab.ofb.fr", 
-    dependencies = TRUE
-    )
+pak::pkg_install("OFB-IdF/templatesOFB")
 
 ```
