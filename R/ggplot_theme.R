@@ -78,7 +78,7 @@ theme_ofb <- function(base_size = 11, base_family = "") {
                 color = ofb_cols("marron1"),
                 angle = 90,
                 vjust = 2,
-                hjust = 0,
+                hjust = 1,
                 size = base_size*1.1
             ),
             legend.title = ggplot2::element_text(
