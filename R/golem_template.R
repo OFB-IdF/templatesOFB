@@ -5,7 +5,6 @@
 #' graphique de l'OFB
 #'
 #' @param path chemin du dossier où créer le package de l'appli
-#' @param package_name nom du package
 #' @param ... autres arguments passés à [golem::create_golem()]
 #'
 #' @examples \dontrun{
@@ -19,12 +18,14 @@
 #'
 #' @importFrom brew brew
 #' @export
-golem_template <- function(path, package_name, ...) {
+golem_template <- function(path, ...) {
+
+    golem::create_golem(path = path, ...)
 
     file.copy(
         from = system.file("templates/golem_template_ui.r",
                            package = "templatesOFB"),
-        to = "R/app_ui.R",
+        to = file.path(path, "R/app_ui.R"),
         overwrite = TRUE
     )
 
@@ -37,7 +38,7 @@ golem_template <- function(path, package_name, ...) {
                 "templates/style.css"
                 ),
             package = "templatesOFB"),
-        to = "inst/app/www/",
+        to = file.path(path, "inst/app/www/"),
         overwrite = TRUE
     )
 
@@ -48,17 +49,17 @@ golem_template <- function(path, package_name, ...) {
             ),
             package = "templatesOFB"
         ),
-        to = "R",
+        to = file.path(path, "R"),
         overwrite = TRUE
     )
 
-    file.remove("inst/app/www/favicon.ico")
+    file.remove(file.path(path, "inst/app/www/favicon.ico"))
 
     brew::brew(
         file = system.file(
             "templates/app.brew",
             package = "templatesOFB"
         ),
-        output = "app.R"
+        output = file.path(path, "app.R")
     )
 }
