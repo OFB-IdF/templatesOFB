@@ -1,0 +1,99 @@
+h1 {
+    font-size: 28.08px;
+    font-weight: 800;
+    font-family: Marianne, Arial, sans-serif;
+    color: rgb(0, 58, 118);
+    line-height: 35.72px;
+    text-decoration: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 28.08px;
+    font-weight: 800;
+    font-family: Marianne, Arial, sans-serif;
+    color: rgb(243, 150, 85);
+    line-height: 35.72px;
+    text-decoration: none;
+    width: 930px;
+    height: auto; /* Remplace la hauteur fixe */
+    border: none;
+    margin: 20px 0px 10px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 800;
+    font-family: Marianne, Arial, sans-serif;
+    color: rgb(237, 106, 83);
+    line-height: 31.32px;
+    text-decoration: none;
+    width: 930px;
+    height: auto; /* Remplace la hauteur fixe */
+    border: none;
+    margin: 0px 0px 10px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Marianne; Arial; sans-serif;
+    color: rgb(2, 59, 118);
+    line-height: 25px;
+    text-decoration: none ;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-sizing: border-box
+}
+
+p {
+    font-size: 18px;
+    font-family: Marianne, Arial, sans-serif;
+    color: rgb(2, 59, 118);
+    line-height: 25px;
+    text-decoration: none;
+    text-align: justify;
+    width: auto; /* Ajustement pour éviter des restrictions inutiles */
+    height: auto; /* Supprime la hauteur fixe */
+    border: none;
+    margin: 0px 0px 11px;
+    transition: all 0.3s ease-in-out; /* Ajout d'une durée */
+    outline: none;
+    box-sizing: border-box;
+}
+
+div.quarto-title > p{
+    margin-bottom: 1em;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: Marianne, Arial, sans-serif;
+    color: rgb(0, 58, 118);
+    line-height: 35.72px;
+    text-decoration: none;
+    border: none;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.background-image {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0px;
+    width: 600px;
+    height: auto;
+    z-index: -1;
+}
+

@@ -1,0 +1,61 @@
+---
+title: "Titre du document"
+subtitle: "sous-titre du document"
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+lang: fr
+format: 
+    html:
+        number-depth: 4
+        css: style_article.css
+filters: 
+    - custom-header.lua
+editor: visual
+---
+
+## Titre niveau I
+
+### Titre niveau 2
+
+#### Titre niveau 3
+
+Paragraphe de texte
+
+#### Exemples de blocs de code
+
+Exemple de bloc de code s'affichant ainsi que son résultat:
+
+```{r}
+1+1
+```
+
+Le même bloc de code mais seul le résultat s'affiche:
+
+```{r}
+#| echo: false
+1+1
+```
+
+Le code est exécuté mais le résultat n'est pas affiché:
+
+```{r}
+#| results: hide
+1+1
+```
+
+Le code est affiché mais pas exécuté:
+
+```{r}
+#| eval: false
+1+1
+```
+
+Le code est exécuté mais ni le code ni le résultat n'est affiché:
+
+```{r}
+#| include: false
+1+1
+```
+
+::: background-image
+![](filigrane.png)
+:::
